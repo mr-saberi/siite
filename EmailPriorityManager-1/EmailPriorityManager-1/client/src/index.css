@@ -1,0 +1,115 @@
+@import url("https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 215 35% 8%;
+  --foreground: 210 40% 98%;
+  --muted: 215 30% 15%;
+  --muted-foreground: 215 20% 85%;
+  --popover: 215 35% 6%;
+  --popover-foreground: 210 40% 98%;
+  --card: 215 35% 10%;
+  --card-foreground: 210 40% 98%;
+  --border: 215 30% 25%;
+  --input: 215 30% 25%;
+  --primary: 215 85% 25%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 215 70% 35%;
+  --secondary-foreground: 210 40% 98%;
+  --accent: 215 70% 30%;
+  --accent-foreground: 210 40% 98%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 60 9.1% 97.8%;
+  --ring: 215 70% 30%;
+  --radius: 0.5rem;
+  
+  /* Custom colors */
+  --cream: 36 33% 96%;
+  --charcoal: 215 30% 15%;
+  --light: 215 30% 20%;
+  --dark: 215 70% 5%;
+  --text-muted: 215 15% 75%;
+}
+
+.dark {
+  --background: 215 40% 6%;
+  --foreground: 210 40% 98%;
+  --muted: 215 35% 12%;
+  --muted-foreground: 215 20% 85%;
+  --popover: 215 40% 4%;
+  --popover-foreground: 210 40% 98%;
+  --card: 215 40% 8%;
+  --card-foreground: 210 40% 98%;
+  --border: 215 35% 20%;
+  --input: 215 35% 20%;
+  --primary: 215 90% 20%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 215 75% 30%;
+  --secondary-foreground: 210 40% 98%;
+  --accent: 215 75% 25%;
+  --accent-foreground: 210 40% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 215 75% 25%;
+  --radius: 0.5rem;
+  --text-muted: 215 15% 75%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+  
+  /* Custom Font Classes */
+  .vazir {
+    font-family: 'Vazir', 'Roboto', sans-serif;
+  }
+  
+  .playfair {
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .latin {
+    direction: ltr;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+  }
+}
+
+/* Custom class for right-to-left text direction */
+.rtl {
+  direction: rtl;
+}
+
+/* Custom class for left-to-right text direction */
+.ltr {
+  direction: ltr;
+}
+
+/* Custom Background Colors */
+.bg-cream {
+  background-color: hsl(var(--cream));
+}
+
+.bg-charcoal {
+  background-color: hsl(var(--charcoal));
+}
+
+.bg-light {
+  background-color: hsl(var(--light));
+}
+
+.bg-dark {
+  background-color: hsl(var(--dark));
+}
+
+.text-charcoal {
+  color: hsl(var(--charcoal));
+}
